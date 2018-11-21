@@ -7,13 +7,13 @@ require_relative('../bear.rb')
 class RiverTest < MiniTest::Test
 
   def setup()
-    @fish1 = Fish.new("fish1")
-    @fish2 = Fish.new("fish2")
-    @fish3 = Fish.new("fish3")
-    @fish4 = Fish.new("fish4")
-    @fish5 = Fish.new("fish5")
+    fish1 = Fish.new("fish1") #the fish don't need to be global as they are not being tested.
+    fish2 = Fish.new("fish2")
+    fish3 = Fish.new("fish3")
+    fish4 = Fish.new("fish4")
+    fish5 = Fish.new("fish5")
 
-    fish = [@fish1, @fish2, @fish3, @fish4, @fish5]
+    fish = [fish1, fish2, fish3, fish4, fish5]
 
     @river = River.new("Clyde", fish)
   end
